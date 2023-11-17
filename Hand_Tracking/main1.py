@@ -10,7 +10,7 @@ detector = hmodule.handDetec()
 while True:
     success, img = cap.read()
     img = detector.findHands(img, draw=False)  # To draw/not the lines
-    lmList = detector.findPosition(img, draw=False)  # To draw/not the specific nodes
+    lmList = detector.findPosition(img, draw=False)  # To draw/not the specific nodes2624
     if len(lmList) >= 5:
         print(lmList[4])
     cTime = time.time()

@@ -99,7 +99,7 @@ class handDetec():
                                               self.mpDrw.DrawingSpec(color=(0,255,0), thickness=2, circle_radius=2))
         return img
 
-    def findPosition(self, img, handNo=0):
+    def findPosition(self, img, handNo=0,draw=True):
         lmList = []
         if self.results.multi_hand_landmarks:
             myHand = self.results.multi_hand_landmarks[handNo]
